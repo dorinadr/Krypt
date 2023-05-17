@@ -1,17 +1,15 @@
-import React from 'react';
 import { createRoot} from 'react-dom/client';
+import React from 'react';
 import App from './App';
 import './index.css';
-import { TransactionProvider } from './context/TransactionContext';
-
-
+import { TransactionsProvider } from './context/TransactionContext';
 
 
 createRoot(document.getElementById('root')).render(
-  <TransactionProvider>
+  <TransactionsProvider>
  <React.StrictMode>
     <App />
   </React.StrictMode>
-  </TransactionProvider>, 
-
+  </TransactionsProvider>,
+ 
 );
